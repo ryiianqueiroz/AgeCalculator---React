@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(207, 217, 226);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  width: 50vw;
+  height: 70vh;
+  border: rgb(14, 4, 4);
+  background-color: white;
+  margin-left: 25%;
+  margin-top: 100px;
+  border-radius: 30px;
+  border-bottom-right-radius: 150px;
+  border-bottom: 1px solid rgb(194, 194, 194);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#arrowimage{
+  width: 3vw;
+  height: 6%;
+  border-radius: 50px;
+  padding: 15px;
+  cursor: pointer;
+  margin-left: 38%;
+  margin-top: -30px;
+  position: absolute;
+}
+
+.arrowBlack{
+  background-color: black;
+}
+
+.arrowPurple{
+  background-color: rgb(138, 36, 255);
+}
+
+.age{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 75%;
+  height: 33%;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.719);
 }
 
-.App-link {
-  color: #61dafb;
+.age h3{
+  color: gray;
+  font-size: 1rem;
+  margin-left: 15%;
+  margin-top: 30px;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#age1text, #age2text, #age3text{
+  width: 8.5vw;
+  height: 6vh;
+  margin-left: 18px;
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.years{
+  margin-left: 3%;
+  font-size: 2rem;
+  font-style: italic;
+  height: 70%;
+}
+
+.yearsText{
+  display: flex;
+  font-size: 2.1vw;
+  margin-top: 5px;
+}
+
+.yearsText:nth-child(1){
+  margin-top: -50px;
+}
+
+.yearsText:nth-child(2){
+  margin-top: 3%;
+}
+
+.yearsText:nth-child(3){
+  margin-top: 3%;
+}
+
+#--purple{
+  color: rgb(138, 36, 255);
+}
+
+#--{
+  margin-top: -50px;
+  color: rgb(138, 36, 255);
+}
+
+#--2{
+  margin-top: -50px;
+  color: rgb(138, 36, 255);
+}
+
+#monthsDays{
+  margin-top: -55px;
+}
+
+#monthsDays2{
+  margin-top: -55px;
+}
+
+@media screen and (max-width: 1100px) {
+  .container{
+    margin-top: 110px;
+    margin-left: 27%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .yearsText{
+    font-size: 2.9vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .yearsText{
+    font-size: 3.9vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container{
+    width: 70%;
+    margin-left: 14.7%;
+    margin-top: 100px;
+    border-bottom-right-radius: 80px;
+  }
+
+  .age{
+    width: 90%;
+    margin-right: 3%;
+  }
+
+  .age1{
+    margin-left: 4px;
+    width: 30%;
+  }
+
+  .age2{
+    margin-left: 0px;
+    width: 30%;
+  }
+
+  .age3{
+    margin-left: 5px;
+    width: 30%;
+  }
+
+  #age1text{
+    margin-left: 14px;
+  }
+
+  #age2text{
+    margin-left: 13px;
+  }
+
+  #age3text{
+    margin-left: 14px;
+  }
+
+  #age1text, #age2text, #age3text{
+    width: 13vw;
+  }
+
+  .yearsText{
+    font-size: 6vw;
+  }
+
+  .yearsText:nth-child(1){
+    margin-top: 10px;
+  }
+
+  #arrowimage{
+    margin-left: 28%;
+    width: 10%;
   }
 }
